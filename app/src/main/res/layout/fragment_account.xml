@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.AccountFragment">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/headphonesicon"
+        android:text="  Audio Brand"
+        android:layout_marginTop="@dimen/_6mdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_4mdp"
+        android:background="@drawable/bg_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130mdp"
+            android:layout_margin="@dimen/_4mdp"
+            android:background="@drawable/rectangle_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/igProfileImage"
+                android:layout_width="@dimen/_100mdp"
+                android:layout_height="@dimen/_100mdp"
+                android:layout_marginStart="@dimen/_18mdp"
+                android:src="@drawable/profile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16mdp"
+                android:layout_marginBottom="@dimen/_16mdp"
+                android:text="Karan Desai"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18font_mdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/txEmail"
+                app:layout_constraintStart_toEndOf="@+id/igProfileImage" />
+
+            <TextView
+                android:id="@+id/txEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_35mdp"
+                android:text="Android Developer"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14mdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/txName"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/igProfileImage" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16mdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:fontFamily="serif"
+            android:text="Account Setting"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_15font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.39"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16mdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:fontFamily="serif"
+            android:text="My Order"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_15font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView16"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16mdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:fontFamily="serif"
+            android:text="Notification Setting"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_15font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView17"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16mdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:fontFamily="serif"
+            android:text="Privacy And Policy"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_15font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView18"
+            app:layout_constraintEnd_toEndOf="@+id/textView16"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16mdp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:fontFamily="serif"
+            android:text="Help Center"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_15font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView19"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16mdp"
+            android:layout_marginBottom="24dp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:fontFamily="serif"
+            android:text="About Us"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_15font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16mdp"
+            android:layout_marginRight="@dimen/_16mdp"
+            android:layout_marginBottom="@dimen/_24mdp"
+            android:fontFamily="serif"
+            android:text="Delete Account"
+            android:textColor="#E83838"
+            android:textSize="@dimen/_15font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnLogOut"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView19" />
+
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16mdp"
+            android:background="@drawable/border"
+            android:text="Log Out"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

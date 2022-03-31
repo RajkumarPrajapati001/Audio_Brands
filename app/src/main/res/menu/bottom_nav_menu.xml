@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/bNavHome"
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        android:menuCategory="secondary"
+       />
+
+    <item
+        android:id="@+id/bNavShop"
+        android:title="Shopping"
+        android:icon="@drawable/ic_shopping_bag"
+        android:menuCategory="secondary"
+      />
+
+    <item
+        android:id="@+id/bNavFavorite"
+        android:title="Favorite"
+        android:icon="@drawable/ic_heart_unselected"
+        android:menuCategory="secondary"
+        />
+
+    <item android:id="@+id/bNavAccount"
+        android:title="Account"
+        android:icon="@drawable/account"
+        android:menuCategory="secondary"
+        />
+
+</menu>

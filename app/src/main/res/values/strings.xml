@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Audio Brand</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="TagLine">Enjoy Your <font color="#28A1E6">Music</font> \nTime With Classical \n<font color="#28A1E6">Sound !!</font> </string>
+    <string name="CreateAccount">Don\'t Have An Account ?  <font color="#FFFF0000">Create Account</font></string>
+
+</resources>

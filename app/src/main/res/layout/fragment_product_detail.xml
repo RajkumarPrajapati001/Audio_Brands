@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue"
+    tools:context=".Fragments.ProductDetailFragment">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/headphonesicon"
+        android:text="  Audio Brand"
+        android:layout_marginTop="@dimen/_6mdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_4mdp"
+        android:background="@drawable/bg_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+
+        <ImageView
+            android:id="@+id/igProductImage"
+            android:layout_width="@dimen/_280mdp"
+            android:layout_height="@dimen/_230mdp"
+            android:layout_margin="@dimen/_5mdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rockerz450"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8mdp"
+            android:text="Boat Rockerz 450"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/igProductImage" />
+
+        <TextView
+            android:id="@+id/txProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_16mdp"
+            android:text="$ 150"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txProductName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txProductName" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/_20mdp"
+            android:layout_height="@dimen/_20mdp"
+            android:layout_marginTop="@dimen/_8mdp"
+            app:layout_constraintEnd_toEndOf="@+id/txProductPrice"
+            app:layout_constraintStart_toStartOf="@+id/txProductPrice"
+            app:layout_constraintTop_toBottomOf="@+id/txProductPrice"
+            app:srcCompat="@drawable/ic_heart_unselected" />
+
+        <TextView
+            android:id="@+id/txColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8mdp"
+            android:text="Color :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/txProductName"
+            app:layout_constraintTop_toBottomOf="@+id/txProductName" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="@dimen/_30mdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4mdp"
+            android:backgroundTint="@color/black"
+            android:text=""
+            app:layout_constraintStart_toStartOf="@+id/txColor"
+            app:layout_constraintTop_toBottomOf="@+id/txColor" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="@dimen/_30mdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16mdp"
+            android:backgroundTint="@color/white"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintTop_toTopOf="@+id/button" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="@dimen/_30mdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16mdp"
+            android:backgroundTint="#FF0000"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/button1"
+            app:layout_constraintStart_toEndOf="@+id/button1"
+            app:layout_constraintTop_toTopOf="@+id/button1" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="@dimen/_30mdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16mdp"
+            android:backgroundTint="#FFEB3B"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/button2"
+            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintTop_toTopOf="@+id/button2" />
+
+        <TextView
+            android:id="@+id/txDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8mdp"
+            android:text="Detail :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+        <TextView
+            android:id="@+id/txProductName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4mdp"
+            android:text="Product Model : Boat Rockerz 450"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12font_mdp"
+            app:layout_constraintStart_toStartOf="@+id/txDetail"
+            app:layout_constraintTop_toBottomOf="@+id/txDetail" />
+
+        <TextView
+            android:id="@+id/txWarranty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4mdp"
+            android:text="Warranty : 1 Year"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12font_mdp"
+            app:layout_constraintStart_toStartOf="@+id/txProductName2"
+            app:layout_constraintTop_toBottomOf="@+id/txProductName2" />
+
+        <TextView
+            android:id="@+id/txProductStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4mdp"
+            android:text="Wearing Style : Over-Ear"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12font_mdp"
+            app:layout_constraintStart_toStartOf="@+id/txWarranty"
+            app:layout_constraintTop_toBottomOf="@+id/txWarranty" />
+
+        <TextView
+            android:id="@+id/txPlug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4mdp"
+            android:text="Earphone Plug : 3.5 mm Plug"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12font_mdp"
+            app:layout_constraintStart_toStartOf="@+id/txProductStyle"
+            app:layout_constraintTop_toBottomOf="@+id/txProductStyle" />
+
+        <TextView
+            android:id="@+id/txCable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4mdp"
+            android:text="1.2 mm- 0.05m(Branded Cable )"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12font_mdp"
+            app:layout_constraintStart_toStartOf="@+id/txPlug"
+            app:layout_constraintTop_toBottomOf="@+id/txPlug" />
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16mdp"
+            android:layout_marginRight="@dimen/_16mdp"
+            android:text="Add To Cart"
+            android:background="@drawable/border"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txCable" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
